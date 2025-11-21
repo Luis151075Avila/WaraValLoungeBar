@@ -5,7 +5,8 @@
 
 import { GoogleGenAI, Chat, GenerateContentResponse } from "@google/genai";
 
-const API_KEY = process.env.API_KEY || '';
+// Safe access to process.env for browser environments
+const API_KEY = (typeof process !== 'undefined' && process.env && process.env.API_KEY) ? process.env.API_KEY : '';
 
 let chatSession: Chat | null = null;
 

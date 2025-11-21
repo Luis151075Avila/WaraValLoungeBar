@@ -11,6 +11,7 @@ import FluidBackground from './components/FluidBackground';
 import GradientText from './components/GlitchText';
 import CustomCursor from './components/CustomCursor';
 import ArtistCard from './components/ArtistCard';
+import AIChat from './components/AIChat';
 import { Artist } from './types';
 
 // Dummy Data
@@ -126,6 +127,7 @@ const App: React.FC = () => {
     <div className="relative min-h-screen text-white selection:bg-[#4fb7b3] selection:text-black cursor-auto md:cursor-none overflow-x-hidden">
       <CustomCursor />
       <FluidBackground />
+      <AIChat />
       
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-40 flex items-center justify-between px-6 md:px-8 py-6 mix-blend-difference">
